@@ -9,10 +9,59 @@
     <link rel="stylesheet" href="museumApp.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
+    
+<style>
+    body {
+        background-color: #f9f9f9;
+        color: #333;
+    }
+
+    h1, h2, .section-title {
+        font-weight: 600;
+        /* color: #222; */
+        position: relative;
+        padding-bottom: 0.3em;
+        margin-bottom: 1em;
+    }
+
+    .map-container {
+        min-height: 300px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    address, ul, li {
+        font-size: 1.1rem;
+    }
+
+    .table th, .table td {
+        font-size: 1rem;
+    }
+
+    .btn-outline-dark {
+        transition: all 0.3s ease;
+    }
+
+    .btn-outline-dark:hover {
+        background-color: #333;
+        color: white;
+    }
+
+    section {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+</style>
+
 </head>
 
 <body>
 
+    <!-- ナビゲーションバー -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="ExamplePage.html">The Museum in Your Mind</a>
@@ -65,8 +114,8 @@
                         <strong>The Museum in Your Mind</strong><br />
                         123 Imagination St.<br />
                         Art City, AC 12345<br />
-                        <abbr title="Phone">P:</abbr> +1 (234) 567-8900<br />
-                        <abbr title="Email">E:</abbr> <a href="mailto:info@yourmuseum.org">info@yourmuseum.org</a>
+                        Phone number :+1 (234) 567-8900<br />
+                        e-mail :<a href="mailto:info@yourmuseum.org">info@yourmuseum.org</a>
                     </address>
                     <h5>Getting Here:</h5>
                     <ul>
@@ -138,7 +187,7 @@
                             </table>
 
                             <div class="text-center mt-4">
-                                <a href="#" class="btn btn-outline-dark rounded-pill px-4">Buy Tickets</a>
+                                <a href="TicketPage.html" class="btn btn-outline-dark rounded-pill px-4">Buy Tickets</a>
                             </div>
                         </div>
                     </div>

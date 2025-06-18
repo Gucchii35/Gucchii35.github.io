@@ -331,9 +331,10 @@ footer {
 .section-title {
   font-weight: 700;
   margin-bottom: 1.5rem;
-  border-bottom: 3px solid #333;
+  border-bottom: 1px solid #333;
   padding-bottom: 0.5rem;
   max-width: 300px;
+  
 }
 
 /* ヘッダーの調整 */
