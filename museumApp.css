@@ -1,27 +1,10 @@
 /*font-familyの設定 */
-/* <!-- ✅ フォント適用 -->
-        body {
-            font-family: 'Noto Serif JP', serif;
-            background-color: #fdfcf9;
-            color: #333;
-        }
+body {
+  font-family: 'Noto Serif JP', serif;
+  background-color: #fdfcf9;
+  color: #333;
+}
 
-        h1,
-        h2,
-        h3 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-        }
-
-        .navbar {
-            font-family: 'Playfair Display', serif;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }*/
 
 
 /*ExamplePage(Home)*/
@@ -43,7 +26,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* 後述の問題回避 */
+  background-attachment: fixed;
+  /* 後述の問題回避 */
 
   height: 100vh;
 
@@ -62,6 +46,7 @@
 }
 
 @media (max-width: 768px) {
+
   .hero,
   .hero2 {
     background-attachment: scroll;
@@ -244,8 +229,8 @@ footer {
   text-align: center;
   margin-top: 50px;
 
-/*スマホ表示最適化のための実験*/
-  background-repeat: no-repeat; 
+  /*スマホ表示最適化のための実験*/
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
