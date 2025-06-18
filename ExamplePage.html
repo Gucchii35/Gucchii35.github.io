@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Museum in Your Mind</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="museumApp.css">
+    <!-- Google Fontsの読み込み -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Noto+Serif+JP&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="ExamplePage.html">The Museum in Your Mind</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ExhibitionPage.html">Exhibitions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="CollectionPage.html">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="VisitPage.html">Visit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="TicketPage.html">Ticket</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div>
+            <h1>Dive into Art.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <!-- 来館情報 -->
+        <!-- ヒーローセクション直下の流れるテキスト -->
+        <div class="ticker-container white-text">
+            <div class="ticker-text">
+                ● Open today from 10:00 AM to 6:00 PM ｜ ● Special Exhibition "The Art of Loving" runs until 15 September
+                ｜ ● New items available at the Museum Shop!
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="py-5 bg-body-secondary text-center">
+        <div class="container">
+            <h2 class="mb-4">Welcome to (y)our museum.</h2>
+            <p class="lead mb-4">Art as a Mirror to Your Soul.</p>
+            <p class="mb-4">Discover the beauty and depth of art that reflects the essence of humanity.</br> Join us in
+                exploring the stories behind each piece, where every brushstroke speaks to the heart.</p>
+            <!-- 横線 -->
+            <div class="custom-line mx-auto mb-4"></div>
+
+            <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                <a href="TicketPage.html" class="btn btn-museum-solid btn-lg">Buy a ticket</a>
+                <a href="VisitPage.html" class="btn btn-museum-outline btn-lg">Plan Your Visit</a>
+            </div>
+        </div>
+
+    </section>
+
+
+    <a id="exhibition"></a>
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Current Exhibitions</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- 展示1 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="Exhibition 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Exhibition Title</h5>
+                        <p class="card-text">Short description of the exhibition.</p>
+                        <!-- <a href="#" class="btn btn-primary stretched-link">Learn More</a> -->
+                        <a href="#" class="btn btn-link custom-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 展示2 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1579783928621-7a13d66a62d1?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="Exhibition 2">
+                    <div class="card-body">
+                        <h5 class="card-title">The art of Living</h5>
+                        <p class="card-text">Short description of the exhibition.</p>
+                        <!-- <a href="#" class="btn btn-primary stretched-link">Learn More</a> -->
+                        <a href="ExhibitionPage.html" class="btn btn-link custom-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 展示3 -->
+            <div class="col">
+                <div class="card shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1490668219599-a79d4d90cf66?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="card-img-top" alt="Exhibition 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Exhibition Title</h5>
+                        <p class="card-text">Short description of the exhibition.</p>
+                        <a href="#" class="btn btn-link custom-link">Learn more</a>
+                        <!-- <a href="#" class="btn btn-primary stretched-link">Learn More</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ギャラリーセクション -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">(y)our collection</h2>
+        <p class="text-center mb-5">Explore our curated collection of artworks that resonate with the human spirit.
+            Click artworks and see details.</p>
+        <div id="artCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner ratio ratio-16x9"> <!-- ← 16:9比率にする -->
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1583306346437-f2143c0f11fc?q=80&w=1471&auto=format&fit=crop"
+                        class="d-block w-100 object-fit-cover" alt="展示作品1" data-bs-toggle="modal"
+                        data-bs-target="#modal1" style="cursor: pointer;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Persona</h5>
+                        <p>Unknown</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1507421056395-518dddcab93c?q=80&w=1524&auto=format&fit=crop"
+                        class="d-block w-100 object-fit-cover" alt="展示作品2" data-bs-toggle="modal"
+                        data-bs-target="#modal2" style="cursor: pointer;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Gap</h5>
+                        <p>Unknown</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1649441243426-ec0a6aeb5a83?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="d-block w-100 object-fit-cover" alt="展示作品3" data-bs-toggle="modal"
+                        data-bs-target="#modal3" style="cursor: pointer;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>A1one</h5>
+                        <p>(Un)known</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 前後のスライドボタン -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#artCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">前へ</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#artCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">次へ</span>
+            </button>
+        </div>
+    </div>
+
+
+    <!-- コレクションボタン -->
+    <div class="d-flex align-items-center justify-content-center my-5 gap-3">
+        <div class="flex-grow-1 border-top"></div>
+        <a href="CollectionPage.html" class="btn btn-outline-dark px-4 py-2 rounded-pill">
+            See all collection
+        </a>
+        <div class="flex-grow-1 border-top"></div>
+    </div>
+
+
+
+    <!-- モーダル1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1Label">Persona</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1583306346437-f2143c0f11fc?q=80&w=1471&auto=format&fit=crop"
+                        class="img-fluid mb-3" alt="Persona">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates incidunt, magni amet
+                        doloribus expedita quod eum deleniti, non pariatur nesciunt dolor quae maxime officia
+                        quia
+                        asperiores repellat! Pariatur, autem fuga.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal2Label">Gap</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1507421056395-518dddcab93c?q=80&w=1524&auto=format&fit=crop"
+                        class="img-fluid mb-3" alt="Gap">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere quidem, eos magnam
+                        voluptatem perspiciatis sint veritatis ex animi esse eveniet. Aspernatur quod dolor
+                        libero iste
+                        officiis, voluptatem debitis ipsum.
+                        Esse aspernatur est quas aut exercitationem, beatae consequatur sapiente totam harum
+                        delectus
+                        blanditiis molestiae facere iusto assumenda nam magnam aliquid veritatis non amet
+                        dignissimos,
+                        ullam id veniam? Rerum, esse doloremque.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- モーダル3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal3Label">A1one</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.unsplash.com/photo-1649441243426-ec0a6aeb5a83?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        class="img-fluid mb-3" alt="A1one">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque debitis ipsam iusto,
+                        dolore
+                        accusantium obcaecati consectetur cum autem deleniti quaerat quo aut, harum sed omnis
+                        ipsum.
+                        Reprehenderit et doloremque numquam!
+                        Velit aliquid commodi porro alias, similique dolor accusamus facere. Veritatis maiores
+                        vitae nam
+                        hic perspiciatis deleniti non illo quas rerum tenetur? Voluptatibus, voluptate sapiente?
+                        Quaerat
+                        aliquid alias ad nobis. Voluptatem?
+                        Tempora totam eius adipisci doloremque debitis nesciunt nisi neque a consectetur
+                        voluptas
+                        recusandae laborum, ducimus suscipit tenetur officiis non nulla quod, nam perspiciatis,
+                        aperiam
+                        ipsum magni porro exercitationem. Quod, quisquam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 主要コンテンツ -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>展示情報</h2>
+                <p>現在開催中の展示をご覧ください。</p>
+            </div>
+            <div class="col-lg-4">
+                <h2>コレクション</h2>
+                <p>当館の所蔵作品を紹介します。</p>
+            </div>
+            <div class="col-lg-4">
+                <h2>アクセス</h2>
+                <p>美術館への行き方をご案内します。</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="opening-hours" class="opening-hours">
+        roading opening hour…
+    </div>
+
+
+    <!-- フッター -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2025 The Musem in Your Mind | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+    <!-- Bootstrap 5のJavaScript（Popper含む）を使用 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery、Popper.js、Bootstrap 4用JSは削除 -->
+    <!-- <script src="...jquery..."></script> -->
+    <!-- <script src="...popper..."></script> -->
+    <!-- <script src="...bootstrap 4..."></script> -->
+
+    <!--カスタムスクリプト -->
+    <script src="museumApp.js"></script>
+
+
+</body>
+
+</html>

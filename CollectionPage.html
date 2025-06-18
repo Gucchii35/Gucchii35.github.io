@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The museum in your mind - Collections</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="museumApp.css">
+
+</head>
+
+<body>
+
+        <!-- ナビゲーションバー -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="ExamplePage.html">The Museum in Your Mind</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="ExamplePage.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ExhibitionPage.html">Exhibitions</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#" aria-current="page">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link" href="VisitPage.html">Visit</a></li>
+                    <li class="nav-item"><a class="nav-link" href="TicketPage.html">Ticket</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヘッダー -->
+    <header class="bg-light py-4 border-bottom shadow-sm">
+        <div class="container">
+            <h1 class="h3 mb-1">Explore Our Collection</h1>
+            <p class="text-muted mb-3">Search and browse artworks from our permanent collection</p>
+
+            <form class="d-flex gap-2" role="search">
+                <input type="search" class="form-control" placeholder="Search by title, artist, keyword..."
+                    aria-label="Search" />
+                <select class="form-select" style="max-width: 200px;">
+                    <option selected>All Departments</option>
+                    <option>Paintings</option>
+                    <option>Sculptures</option>
+                    <option>Photography</option>
+                </select>
+                <button class="btn btn-dark px-4" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+
+
+    <!-- コレクション一覧 -->
+    <section class="container py-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+
+            <!-- カード1 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1583306346437-f2143c0f11fc?q=80&w=400"
+                        class="card-img-top" alt="Art" />
+                    <div class="card-body">
+                        <h5 class="card-title">Persona</h5>
+                        <p class="card-text text-muted">Unknown Artist, 19th century</p>
+                        <a href="#" class="stretched-link text-decoration-none text-dark">View details →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- カード2 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1507421056395-518dddcab93c?q=80&w=400"
+                        class="card-img-top" alt="Art" />
+                    <div class="card-body">
+                        <h5 class="card-title">Gap</h5>
+                        <p class="card-text text-muted">Anonymous, 20th century</p>
+                        <a href="#" class="stretched-link text-decoration-none text-dark">View details →</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- カード3 -->
+            <div class="col">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1649441243426-ec0a6aeb5a83?q=80&w=400"
+                        class="card-img-top" alt="Art" />
+                    <div class="card-body">
+                        <h5 class="card-title">A1one</h5>
+                        <p class="card-text text-muted">Contemporary</p>
+                        <a href="#" class="stretched-link text-decoration-none text-dark">View details →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap 5のJavaScript（Popper含む）を使用 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery、Popper.js、Bootstrap 4用JSは削除 -->
+    <!-- <script src="...jquery..."></script> -->
+    <!-- <script src="...popper..."></script> -->
+    <!-- <script src="...bootstrap 4..."></script> -->
+
+    <!--カスタムスクリプト -->
+    <script src="museumApp.js"></script>
+</body>
+
+
+</html>

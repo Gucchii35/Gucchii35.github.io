@@ -1,0 +1,367 @@
+/*font-familyの設定 */
+/* <!-- ✅ フォント適用 -->
+        body {
+            font-family: 'Noto Serif JP', serif;
+            background-color: #fdfcf9;
+            color: #333;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .navbar {
+            font-family: 'Playfair Display', serif;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }*/
+
+
+/*ExamplePage(Home)*/
+/* ヒーローイメージのスタイル */
+.hero {
+  background-image: url('https://images.unsplash.com/photo-1579519397271-4467ef0b32d3?q=80&w=1435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  /* background-image: url("C:/Users/r00000796/Desktop/sonota/google.png"); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+
+/*流れる文字*/
+
+.ticker-container {
+  font-size: 4rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+  z-index: 10;
+  /*必要に応じて重なりを調整 */
+}
+
+.ticker-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 25s linear infinite;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.white-text {
+  color: white;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* フッターのスタイル */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+}
+
+/* ボタンの設定 */
+.custom-line {
+  width: 300px;
+  /*（ボタン2つの幅と同じくらい） */
+  height: 1px;
+  background-color: #969696;
+  /* 薄いグレー */
+}
+
+.btn-museum-solid {
+  background-color: #333532;
+  /* 落ち着いたダークオリーブグレー */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* キャッチコピーセクション */
+.btn-museum-solid:hover {
+  color: rgb(150, 150, 150);
+  /* ← 白に固定 */
+  background-color: #333532;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-museum-outline {
+  background-color: transparent;
+  color: #4b4f46;
+  border: 2px solid #4b4f46;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-museum-outline:hover {
+  background-color: #4b4f46;
+  color: white;
+}
+
+/* EXHIBITION */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+  padding: 1.25rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #004085;
+} */
+
+/* EXHIBITIONボタン */
+.custom-link {
+  color: #2c2c2c;
+  /* 落ち着いたグレー（または美術館らしい色） */
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 0;
+  padding-right: 0;
+  transition: color 0.2s ease;
+}
+
+.custom-link:hover {
+  color: #73bba6;
+  /* ホバー時に少し印象的なブルーに */
+
+}
+
+/* コレクションボタンのスタイルを調整 */
+.border-top {
+  border-top: 2px solid #232323;
+  /* グレー系など美術館らしい色に調整 */
+}
+
+
+/* 開館時間の表示 */
+.opening-hours {
+  position: fixed;
+  top: 70px;
+  /* ← ナビバーの下に余裕を持たせて配置 */
+  right: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  font-weight: 300;
+  border-radius: 6px;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+
+/* ExhibitionPage */
+.hero2 {
+  background-image: url('https://images.unsplash.com/photo-1699604757661-e90d237a9954?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .col-md-4 {
+  margin-bottom: 30px;
+}
+
+.btn-custom {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.btn-custom:hover {
+  background-color: #5a6268;
+  text-decoration: none;
+}
+
+.custom-divider {
+  width: 100px;
+  /* 線の長さ */
+  height: 3px;
+  /* 線の太さ */
+  background-color: #666;
+  /* 線の色 */
+  margin: 2rem auto;
+  /* 上下マージンと中央寄せ */
+  border-radius: 2px;
+  /* 角を丸く */
+}
+
+/* CollectionPage */
+
+
+header {
+  padding: 20px;
+  margin: 10px;
+  margin-top: 60px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* 検索バー */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.card img {
+  object-fit: cover;
+  height: 250px;
+}
+
+.card-title {
+  font-weight: 500;
+}
+
+.stretched-link:hover {
+  color: #0056b3;
+}
+
+input[type="text"]::placeholder {
+  color: #999;
+}
+
+/* section,
+footer {
+  padding: 20px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+} */
+
+
+/*VisitPage*/
+/* 地図部分の高さ調整 */
+.map-container {
+  height: 400px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* セクションタイトルのカスタム */
+.section-title {
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  border-bottom: 3px solid #333;
+  padding-bottom: 0.5rem;
+  max-width: 300px;
+}
+
+/* ヘッダーの調整 */
+.hero-fixed {
+    width: 100%;
+    height: 60vh;
+    background-image: url('https://images.unsplash.com/photo-1524014444623-194fde519952?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+}
+
+.hero-fixed::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    /* 視認性向上のための暗めオーバーレイ */
+    z-index: 1;
+}
+
+.hero-fixed>div {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+}
