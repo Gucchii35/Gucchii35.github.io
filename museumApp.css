@@ -43,8 +43,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* 後述の問題回避 */
+  background-attachment: fixed; /* 後述の問題回避 */
 
   height: 100vh;
 
@@ -63,7 +62,8 @@
 }
 
 @media (max-width: 768px) {
-  .hero {
+  .hero,
+  .hero2 {
     background-attachment: scroll;
   }
 }
@@ -243,6 +243,20 @@ footer {
   padding: 100px 0;
   text-align: center;
   margin-top: 50px;
+
+/*スマホ表示最適化のための実験*/
+  background-repeat: no-repeat; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* 不要な指定は削除 */
+  width: 100%;
+  max-height: none;
+  object-fit: unset;
+  /* 適用されないので無意味 */
+
+
 }
 
 .hero h1 {
