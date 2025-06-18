@@ -29,23 +29,44 @@
 .hero {
   background-image: url('https://images.unsplash.com/photo-1579519397271-4467ef0b32d3?q=80&w=1435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
   /* background-image: url("C:/Users/r00000796/Desktop/sonota/google.png"); */
-  background-size: cover;
+  /* background-size: cover;
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-
-  max-height: 100%;
-  width: auto;
-  object-fit: contain;
-  
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
+  position: relative; */
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* 後述の問題回避 */
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+
+  /* 不要な指定は削除 */
+  width: 100%;
+  max-height: none;
+  object-fit: unset;
+  /* 適用されないので無意味 */
+
 }
 
+@media (max-width: 768px) {
+  .hero {
+    background-attachment: scroll;
+  }
+}
 
 /*流れる文字*/
 
